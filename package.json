@@ -7,9 +7,9 @@
     "jupyterlab",
     "jupyterlab-extension"
   ],
-  "homepage": "https://github.com/yourusername/jupyter_cell_selection",
+  "homepage": "https://github.com/thomas_pernet/jupyter_cell_selection",
   "bugs": {
-    "url": "https://github.com/yourusername/jupyter_cell_selection/issues"
+    "url": "https://github.com/thomas_pernet/jupyter_cell_selection/issues"
   },
   "license": "BSD-3-Clause",
   "author": "Your Name",

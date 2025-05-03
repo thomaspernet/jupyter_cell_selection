@@ -27,7 +27,7 @@ pip install jupyter_cell_selection
 Or directly from the GitHub repository:
 
 ```bash
-pip install git+https://github.com/yourusername/jupyter_cell_selection.git
+pip install git+https://github.com/thomas_pernet/jupyter_cell_selection.git
 ```
 
 ## Development Installation
@@ -36,7 +36,7 @@ To install the extension for development:
 
 ```bash
 # Clone the repository
-git clone https://github.com/yourusername/jupyter_cell_selection.git
+git clone https://github.com/thomas_pernet/jupyter_cell_selection.git
 cd jupyter_cell_selection
 
 # Install in development mode

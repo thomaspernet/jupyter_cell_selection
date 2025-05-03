@@ -1,0 +1,69 @@
+/* Style for cells marked for export */
+.jp-Cell[data-selected-for-export="true"] {
+  background-color: rgba(26, 140, 228, 0.1);
+  border-left: 5px solid #2e8fcc;
+}
+
+/* Style for the checkbox container */
+.cell-selection-container {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  margin: 0 2px;
+}
+
+/* Style for the checkbox */
+.cell-selection-checkbox {
+  width: 14px;
+  height: 14px;
+  cursor: pointer;
+  opacity: 0.7;
+  transition: opacity 0.2s;
+}
+
+/* Make the checkbox more visible on hover */
+.cell-selection-checkbox:hover {
+  opacity: 1;
+}
+
+/* Style when checkbox is checked */
+.cell-selection-checkbox:checked {
+  accent-color: #2689d0;
+}
+
+/* Custom tooltip styling */
+.cell-selection-tooltip {
+  visibility: hidden;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+  text-align: center;
+  padding: 5px 10px;
+  border-radius: 4px;
+  position: absolute;
+  z-index: 1000;
+  left: 25px;
+  top: -2px;
+  opacity: 0;
+  transition: opacity 0.3s;
+  white-space: nowrap;
+  pointer-events: none;
+  font-size: 12px;
+}
+
+/* Show the tooltip on hover */
+.cell-selection-container:hover .cell-selection-tooltip {
+  visibility: visible;
+  opacity: 1;
+}
+
+/* Add an arrow to the tooltip */
+.cell-selection-tooltip::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 100%;
+  margin-top: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: transparent rgba(0, 0, 0, 0.8) transparent transparent;
+}

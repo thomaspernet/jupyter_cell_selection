@@ -89,6 +89,13 @@ class CellSelectionExtension implements DocumentRegistry.IWidgetExtension<Notebo
               cell.node.removeAttribute('data-selected-for-export');
             }
             console.log(`Cell marked for export: ${checkbox.checked}`);
+            
+            // Auto-save the notebook when a cell is selected/deselected
+            panel.context.save().then(() => {
+              console.log('Notebook saved automatically after cell selection changed');
+            }).catch(error => {
+              console.error('Error auto-saving notebook:', error);
+            });
           }
         });
         
